@@ -1,8 +1,8 @@
-package ft.eventpublisher.registry;
+package ft.yaeb.registry;
 
-import ft.eventpublisher.annotation.Subscribe;
-import ft.eventpublisher.exception.EventRegistrationException;
-import ft.eventpublisher.matcher.EventMatcher;
+import ft.yaeb.annotation.Subscribe;
+import ft.yaeb.exception.EventRegistrationException;
+import ft.yaeb.matcher.EventMatcher;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

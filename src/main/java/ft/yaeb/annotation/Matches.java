@@ -1,7 +1,7 @@
-package ft.eventpublisher.annotation;
+package ft.yaeb.annotation;
 
-import ft.eventpublisher.matcher.EventMatcher;
-import ft.eventpublisher.matcher.RegexEventMatcher;
+import ft.yaeb.matcher.EventMatcher;
+import ft.yaeb.matcher.RegexEventMatcher;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

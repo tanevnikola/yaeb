@@ -1,6 +1,6 @@
-package ft.eventpublisher.registry;
+package ft.yaeb.registry;
 
-import ft.eventpublisher.exception.EventRegistrationException;
+import ft.yaeb.exception.EventRegistrationException;
 
 import java.util.Set;
 

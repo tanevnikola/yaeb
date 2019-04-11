@@ -1,4 +1,4 @@
-package ft.eventpublisher.exception;
+package ft.yaeb.exception;
 
 public class EventRegistrationException extends Exception {
     public EventRegistrationException() {

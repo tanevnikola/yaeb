@@ -1,8 +1,8 @@
-package ft.eventpublisher;
+package ft.yaeb;
 
-import ft.eventpublisher.dispatcher.EventDispatcher;
-import ft.eventpublisher.exception.EventRegistrationException;
-import ft.eventpublisher.registry.EventListenerRegistry;
+import ft.yaeb.dispatcher.EventDispatcher;
+import ft.yaeb.exception.EventRegistrationException;
+import ft.yaeb.registry.EventListenerRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

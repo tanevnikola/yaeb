@@ -1,4 +1,4 @@
-package ft.eventpublisher.matcher;
+package ft.yaeb.matcher;
 
 public interface EventMatcher {
     void initialize(Class<?> eventType, String[] params);

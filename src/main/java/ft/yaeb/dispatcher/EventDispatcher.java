@@ -1,6 +1,6 @@
-package ft.eventpublisher.dispatcher;
+package ft.yaeb.dispatcher;
 
-import ft.eventpublisher.registry.EventListenerRecord;
+import ft.yaeb.registry.EventListenerRecord;
 
 import java.util.Set;
 

@@ -1,4 +1,4 @@
-package ft.eventpublisher.matcher;
+package ft.yaeb.matcher;
 
 import java.util.HashSet;
 import java.util.Set;

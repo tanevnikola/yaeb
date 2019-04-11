@@ -1,7 +1,7 @@
-package ft.eventpublisher;
+package ft.yaeb;
 
-import ft.eventpublisher.dispatcher.ExecutorServiceEventDispatcher;
-import ft.eventpublisher.registry.GenericEventListenerRegistry;
+import ft.yaeb.dispatcher.ExecutorServiceEventDispatcher;
+import ft.yaeb.registry.GenericEventListenerRegistry;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;

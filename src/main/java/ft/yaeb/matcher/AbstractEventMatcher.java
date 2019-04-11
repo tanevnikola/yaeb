@@ -1,4 +1,4 @@
-package ft.eventpublisher.matcher;
+package ft.yaeb.matcher;
 
 public abstract class AbstractEventMatcher implements EventMatcher {
     @Override

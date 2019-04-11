@@ -1,8 +1,8 @@
-package ft.eventpublisher;
+package ft.yaeb;
 
-import ft.eventpublisher.annotation.Matches;
-import ft.eventpublisher.annotation.Subscribe;
-import ft.eventpublisher.exception.EventRegistrationException;
+import ft.yaeb.annotation.Matches;
+import ft.yaeb.annotation.Subscribe;
+import ft.yaeb.exception.EventRegistrationException;
 import org.junit.Test;
 
 public class EventPublisherTest {

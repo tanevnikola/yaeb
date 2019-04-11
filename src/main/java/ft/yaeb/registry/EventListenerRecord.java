@@ -1,7 +1,7 @@
-package ft.eventpublisher.registry;
+package ft.yaeb.registry;
 
-import ft.eventpublisher.annotation.Delayed;
-import ft.eventpublisher.matcher.EventMatcher;
+import ft.yaeb.annotation.Delayed;
+import ft.yaeb.matcher.EventMatcher;
 
 import java.lang.reflect.Method;
 
