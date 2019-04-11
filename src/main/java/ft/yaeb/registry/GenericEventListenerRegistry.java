@@ -66,7 +66,7 @@ public final class GenericEventListenerRegistry implements EventListenerRegistry
 
         Subscribe subscribeAnn = eventHandler.getAnnotation(Subscribe.class);
         eventListenerRecords.add(new EventListenerRecord(eventListener, eventHandler,
-                buildEventMatcher(eventHandler), subscribeAnn.delayed()));
+                buildEventMatcher(eventHandler)));
 
         logger.trace("Subscribing: '" + eventHandler + "'");
     }

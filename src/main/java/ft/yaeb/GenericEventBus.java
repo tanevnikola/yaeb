@@ -3,17 +3,13 @@ package ft.yaeb;
 import ft.yaeb.dispatcher.EventDispatcher;
 import ft.yaeb.exception.EventRegistrationException;
 import ft.yaeb.registry.EventListenerRegistry;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import ft.yaeb.registry.GenericEventListenerRegistry;
 
-public class AbstractEventPublisher implements EventPublisher {
-    private static Logger log = LoggerFactory.getLogger(AbstractEventPublisher.class);
-
-    private final EventListenerRegistry eventListenerRegistry;
+public class GenericEventBus implements EventBus {
+    private final EventListenerRegistry eventListenerRegistry = new GenericEventListenerRegistry();
     private final EventDispatcher eventDispatcher;
 
-    public AbstractEventPublisher(final EventListenerRegistry eventListenerRegistry, final EventDispatcher eventDispatcher) {
-        this.eventListenerRegistry = eventListenerRegistry;
+    public GenericEventBus(final EventDispatcher eventDispatcher) {
         this.eventDispatcher = eventDispatcher;
     }
 
@@ -34,7 +30,5 @@ public class AbstractEventPublisher implements EventPublisher {
     public void shutdown() {
         eventDispatcher.shutdown();
         eventListenerRegistry.close();
-
-        log.trace("Shutdown complete!");
     }
 }

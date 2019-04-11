@@ -21,13 +21,43 @@ public class EventPublisherTest {
 
         A instance = new A();
 
-        GenericEventPublisher eventPublisher = new GenericEventPublisher(10);
+        EventBus eventPublisher = new ThreadPoolEventBus(10);
         eventPublisher.register(instance);
+        eventPublisher.publish(2);
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        eventPublisher.publish(2);
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        eventPublisher.publish(2);
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        eventPublisher.publish(2);
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        eventPublisher.publish(2);
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         eventPublisher.publish(2);
         eventPublisher.publish("3");
         eventPublisher.shutdown();
         try {
-            Thread.sleep(1000);
+            Thread.sleep(350);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

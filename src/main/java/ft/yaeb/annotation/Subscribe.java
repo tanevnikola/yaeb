@@ -9,6 +9,4 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD})
 public @interface Subscribe {
     Matches matches() default @Matches(value = ".*");
-
-    Delayed delayed() default @Delayed(value = 0);
 }
